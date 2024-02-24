@@ -1,0 +1,32 @@
+---
+layout: default
+---
+<div class="jumbotron inset">
+    <div class="container">
+        <h1>The Squad</h1>
+        <p class="lead">{{ site.team_description}}</p>
+        <hr class="my-4">
+    </div>
+</div>
+<div class="inset">
+    {% for teammember in site.team %}
+    <div class="card position-relative shadow text-center mx-2 my-2">
+        <div class="row g-0 mx-2 my-2">
+            <div class="col">
+                <div class="card-header">
+                    <img class="border rounded-circle shadow mx-auto d-block" src="{{ teammember.image }}" alt="{{ teammember.name }}">
+                </div>
+            </div>
+            <div class="col">
+                <div class="card-body text-left col">
+                    <h1 style="color: white;" class=" display-2 card-title">{{ teammember.name }}</h1>
+                    <h1 class="card-text text-muted">{{ teammember.position }}</h1>
+                    <div class="my-4">
+                        <p class="card-text text-muted">{{ teammember.content }}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+</div>

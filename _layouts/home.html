@@ -1,0 +1,16 @@
+---
+layout: default
+---
+<div class="jumbotron inset">
+    <div class="container">
+        <h1>{{ site.tagline }}</h1>
+        <p class="lead">{{ site.sub_tagline}}</p>
+        <button type="button" class="btn btn-block btn-primary btn-lg" data-toggle="modal" data-target="#waitlistModal">{{ site.email_signup_cta }}</button>
+        <p class="lead">{{ content }}</p>
+        <hr class="my-4">
+    </div>
+</div>
+
+{% include feature-grid.html %}
+
+{% include team-grid.html %}

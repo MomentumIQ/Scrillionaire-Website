@@ -1,0 +1,72 @@
+.navbar {
+  background-color: #181818 !important;
+}
+
+.navbar-brand, .nav-link {
+  color: white !important;
+}
+
+.nav-link:hover {
+  color: #74F9B8 !important;
+}
+
+.jumbotron {
+  background-color: transparent !important;
+}
+
+.sticky-top .container {
+  width: 100%;
+}
+
+.inset {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.btn-primary {
+  color: #181818 !important;
+  border-color: #74F9B8 !important;
+  background-color: #74F9B8 !important;
+}
+
+.btn-primary:hover {
+  color: #74F9B8 !important;
+  border-color: #74F9B8 !important;
+  background-color: transparent !important;
+}
+
+.modal-content {
+  background-color: #181818 !important;
+}
+
+.card {
+  border-radius: 10px !important;
+  background-color: #212121 !important;
+}
+
+.card-img-overlay {
+  position: absolute;
+  margin-left: 60% !important;
+}
+
+body {
+  background-color: #181818 !important;
+  color: white !important;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif !important;
+}
+
+a {
+  color: #74F9B8 !important;
+  -webkit-transition: color 0.15s linear;
+  -moz-transition: color 0.15s linear;
+  -ms-transition: color 0.15s linear;
+  -o-transition: color 0.15s linear;
+  transition: color 0.15s linear;
+}
+
+a:hover {
+  color: #6EEEB0 !important;
+  text-decoration: none !important;
+}
+
+/*# sourceMappingURL=styles.css.map */
