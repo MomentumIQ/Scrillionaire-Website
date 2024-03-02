@@ -23,11 +23,10 @@
             </ul>
         </div>
         <div class="col-2">
-            <h5>Features</h5>
+            <h5>Waitlist</h5>
             <ul class="nav flex-column">
-                {% for item in site.features %}
-                <li class="nav-item mb-2"><a href="{{ item.url }}" class="nav-link p-0 text-muted"><small>{{ item.name }}</small></a></li>
-                {% endfor %}
+                <button type="button" class="btn btn-block btn-primary btn-lg" data-toggle="modal"
+                data-target="#waitlistModal">{{ site.email_signup_cta }}</button>
             </ul>
         </div>
         <div class="col-2">
@@ -42,7 +41,7 @@
 
     
     <div class="d-flex justify-content-between py-4 my-4 border-top">
-        <p><small class="text-muted">© 2023 MomentumIQ, Inc. All rights reserved.</small></p>
+        <p><small class="text-muted">© 2024 MomentumIQ, Inc. All rights reserved.</small></p>
         <p><small class="text-muted">Made with 🌲🌲🌲 in Cascadia</small></p>
     </div>
 </footer>

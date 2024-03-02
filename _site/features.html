@@ -50,16 +50,329 @@
 </nav>
     <div class="jumbotron inset">
     <div class="container">
-        <h1>Scrillionaire's Features are Still a Secret</h1>
-        <p class="lead">We're keeping our roadmap and upcoming features under wraps for now but you should sign up for the waitlist so you can be the first to know what we've got for you in the pipeline.</p>
+        <h1>Scrillionaire Feature Roadmap</h1>
+        <p class="lead">These are the planned features for Scrillionaire. Not all of these features has an explicit design component but this is an accounting of the features we have decided to add to our Feature List so far.</p>
         <hr class="my-4">
-        <button type="button" class="btn btn-block btn-primary btn-lg" data-toggle="modal" data-target="#waitlistModal">Join the Waitlist</button>
+      
+        <p>Join the waitlist to find out about new features as they make it onto our roadmap</p>
+        <button type="button" class="btn btn-block btn-primary btn-lg" data-toggle="modal"
+                data-target="#waitlistModal">Join the Waitlist</button>
     </div>
-    <div class="col">
-        <div class="card-header text-left">
-            <h1 style="color: white;" class=" display-2 card-title"></h1>
-            <h1 class="card-text text-muted"></h1>
+</div>
+<div class="inset">
+    <div class="container">
+        <div class="d-flex  py-4 my-4 inset flex-wrap justify-content-center">
+            
+            <a href="#Big-Number-Chart">
+                <div class="card position-relative shadow text-center mx-2 my-2" style="width: 10em; height: 10em;">  
+                    <div class="card-body">
+                        <h2><i class="bi bi-graph-up"></i></h2>
+                        <h5 style="color: white;" class="card-title">Big Number Chart</h5>
+                    </div>
+                </div>
+            </a>
+            
+            <a href="#Big-Number">
+                <div class="card position-relative shadow text-center mx-2 my-2" style="width: 10em; height: 10em;">  
+                    <div class="card-body">
+                        <h2><i class="bi bi-currency-dollar"></i></h2>
+                        <h5 style="color: white;" class="card-title">Big Number</h5>
+                    </div>
+                </div>
+            </a>
+            
+            <a href="#Encrypted-Backups">
+                <div class="card position-relative shadow text-center mx-2 my-2" style="width: 10em; height: 10em;">  
+                    <div class="card-body">
+                        <h2><i class="bi bi-fingerprint"></i></h2>
+                        <h5 style="color: white;" class="card-title">Encrypted Backups</h5>
+                    </div>
+                </div>
+            </a>
+            
+            <a href="#Income-Percentile-Calculator">
+                <div class="card position-relative shadow text-center mx-2 my-2" style="width: 10em; height: 10em;">  
+                    <div class="card-body">
+                        <h2><i class="bi bi-calculator"></i></h2>
+                        <h5 style="color: white;" class="card-title">Income Percentile Calculator</h5>
+                    </div>
+                </div>
+            </a>
+            
+            <a href="#Levels-&-Achievments">
+                <div class="card position-relative shadow text-center mx-2 my-2" style="width: 10em; height: 10em;">  
+                    <div class="card-body">
+                        <h2><i class="bi bi-award"></i></h2>
+                        <h5 style="color: white;" class="card-title">Levels & Achievments</h5>
+                    </div>
+                </div>
+            </a>
+            
+            <a href="#Localized-Data">
+                <div class="card position-relative shadow text-center mx-2 my-2" style="width: 10em; height: 10em;">  
+                    <div class="card-body">
+                        <h2><i class="bi bi-phone"></i></h2>
+                        <h5 style="color: white;" class="card-title">Localized Data</h5>
+                    </div>
+                </div>
+            </a>
+            
+            <a href="#Notifications-Squared">
+                <div class="card position-relative shadow text-center mx-2 my-2" style="width: 10em; height: 10em;">  
+                    <div class="card-body">
+                        <h2><i class="bi bi-phone-vibrate"></i></h2>
+                        <h5 style="color: white;" class="card-title">Notifications Squared</h5>
+                    </div>
+                </div>
+            </a>
+            
+            <a href="#Peer-Competition">
+                <div class="card position-relative shadow text-center mx-2 my-2" style="width: 10em; height: 10em;">  
+                    <div class="card-body">
+                        <h2><i class="bi bi-people"></i></h2>
+                        <h5 style="color: white;" class="card-title">Peer Competition</h5>
+                    </div>
+                </div>
+            </a>
+            
+            <a href="#Private-Ranking">
+                <div class="card position-relative shadow text-center mx-2 my-2" style="width: 10em; height: 10em;">  
+                    <div class="card-body">
+                        <h2><i class="bi bi-list-ol"></i></h2>
+                        <h5 style="color: white;" class="card-title">Private Ranking</h5>
+                    </div>
+                </div>
+            </a>
+            
+            <a href="#Public-Ranking">
+                <div class="card position-relative shadow text-center mx-2 my-2" style="width: 10em; height: 10em;">  
+                    <div class="card-body">
+                        <h2><i class="bi bi-person-lines-fill"></i></h2>
+                        <h5 style="color: white;" class="card-title">Public Ranking</h5>
+                    </div>
+                </div>
+            </a>
+            
+            <a href="#Transaction-Level-Data">
+                <div class="card position-relative shadow text-center mx-2 my-2" style="width: 10em; height: 10em;">  
+                    <div class="card-body">
+                        <h2><i class="bi bi-receipt"></i></h2>
+                        <h5 style="color: white;" class="card-title">Transaction Level Data</h5>
+                    </div>
+                </div>
+            </a>
+            
         </div>
+        
+        <div class="mb-5">
+        <div class="card card-body shadow">
+            <h1 id="Big-Number-Chart"><a href="/features/big-number-chart.html">Big Number Chart <i style="color: #74F9B8;" class="bi bi-graph-up"></i></a></h1>
+            <h3>The Big Number Chart is a scrollable chart of users total available cash over time. This chart is the primary chart users will be presented with. It is scrollable back in time to see the users Big Number back to the earliest records the user has downloaded and analyzed on their device.</h3>
+            <div style="border-color: white;" class="border-top my-4"></div>
+            <div class="row">
+                <div class="col">
+                    <p><b style="color: #74F9B8;">Problem:</b> <em>Users do not understand how their available cash has changed over time.</em></p>
+                </div>
+                <div class="col">
+                    <p><b style="color: #74F9B8;">Solution:</b> <em>Show users a Big number chart that shows how their available cash has changed over time.</em></p>
+                </div>
+                <div class="col">
+                    <p><b style="color: #74F9B8;">Stretch Feature:</b> <em>Charts will have some interface for either integrating them together or easily swapping between data representations.</em></p>
+                </div>
+            </div>
+        </div>
+        </div>
+        
+        <div class="mb-5">
+        <div class="card card-body shadow">
+            <h1 id="Big-Number"><a href="/features/big-number.html">Big Number <i style="color: #74F9B8;" class="bi bi-currency-dollar"></i></a></h1>
+            <h3>A users Big Number is the aggregate cash the user has available. How much in cash resources can they utilize right now. This number is prominently shown to users on the homepage. It is updated as new data is downloaded and analyzed on the client.</h3>
+            <div style="border-color: white;" class="border-top my-4"></div>
+            <div class="row">
+                <div class="col">
+                    <p><b style="color: #74F9B8;">Problem:</b> <em>Users do not know the total amount of cash they have access to at any given point in time.</em></p>
+                </div>
+                <div class="col">
+                    <p><b style="color: #74F9B8;">Solution:</b> <em>Show users a Big number that aggregates all of the withdraw-able cash available to them from all of their accounts.</em></p>
+                </div>
+                <div class="col">
+                    <p><b style="color: #74F9B8;">Stretch Feature:</b> <em>Big Number minus liabilities with monthly commitments aggregated into a Little Number.</em></p>
+                </div>
+            </div>
+        </div>
+        </div>
+        
+        <div class="mb-5">
+        <div class="card card-body shadow">
+            <h1 id="Encrypted-Backups"><a href="/features/encrypted-backups.html">Encrypted Backups <i style="color: #74F9B8;" class="bi bi-fingerprint"></i></a></h1>
+            <h3>Data is symmetricly encrypted on client and then transmitted over https to server for storage. User can retrieve their own encrypted blob and decrypt on device.</h3>
+            <div style="border-color: white;" class="border-top my-4"></div>
+            <div class="row">
+                <div class="col">
+                    <p><b style="color: #74F9B8;">Problem:</b> <em>Users cannot recover data that is stored on device if device is lost, stolen, damaged beyond use, or if they simply delete the app.</em></p>
+                </div>
+                <div class="col">
+                    <p><b style="color: #74F9B8;">Solution:</b> <em>Users can encrypt thier data and store it on our servers.</em></p>
+                </div>
+                <div class="col">
+                    <p><b style="color: #74F9B8;">Stretch Feature:</b> <em>Analyze encrypted user data using homomorphic encryption to provide anonymouse public features.</em></p>
+                </div>
+            </div>
+        </div>
+        </div>
+        
+        <div class="mb-5">
+        <div class="card card-body shadow">
+            <h1 id="Income-Percentile-Calculator"><a href="/features/income-percentile-calculator.html">Income Percentile Calculator <i style="color: #74F9B8;" class="bi bi-calculator"></i></a></h1>
+            <h3>The Income Percentile Calculator allows users to see what income percentile they are in, what the average is for their current location and what the average for their home address is. The user can check any zip code’s average income percentile.</h3>
+            <div style="border-color: white;" class="border-top my-4"></div>
+            <div class="row">
+                <div class="col">
+                    <p><b style="color: #74F9B8;">Problem:</b> <em>Users do not know what what their income percentile is and cannot calculate it in a private setting. They also do not know what the average is geographically.</em></p>
+                </div>
+                <div class="col">
+                    <p><b style="color: #74F9B8;">Solution:</b> <em>Provide users with a calculator that uses local data to tell them what income percentile they are and that of specific zip codes.</em></p>
+                </div>
+                <div class="col">
+                    <p><b style="color: #74F9B8;">Stretch Feature:</b> <em>User can also see a scrollable chart going back in time showing how their percentile has changed.</em></p>
+                </div>
+            </div>
+        </div>
+        </div>
+        
+        <div class="mb-5">
+        <div class="card card-body shadow">
+            <h1 id="Levels-&-Achievments"><a href="/features/levels-and-achievments.html">Levels & Achievments <i style="color: #74F9B8;" class="bi bi-award"></i></a></h1>
+            <h3>The Levels feature is a sort of game like progression where users have to meet and maintain certain criteria in order to level up. Users are presented visually with their current level, their progress toward the next level and the tasks left for them to complete in order to move on to the next level. Users go down in level if they do not continue to maintain any level’s requirements. The levels are aimed specifically at improving users financial health.  The Achievements feature is a sort of game like achievements system. Users are awarded Achievements for completing specific challenges like “Spend <25% of income in April” or “Increase savings rate by 25% in Q3”. These Achievements are presented to the user as tappable icons that expand to full pages when tapped giving descriptions of the challenge, the date you received the achievement and a quote from a financial guru.</h3>
+            <div style="border-color: white;" class="border-top my-4"></div>
+            <div class="row">
+                <div class="col">
+                    <p><b style="color: #74F9B8;">Problem:</b> <em>Users do not have a private and gamified method of understanding their financial level and how to get to a higher one.</em></p>
+                </div>
+                <div class="col">
+                    <p><b style="color: #74F9B8;">Solution:</b> <em>Provide users with a gamified Levels and Achievements systems that rewards them for taking actions to improve their financial health.</em></p>
+                </div>
+                <div class="col">
+                    <p><b style="color: #74F9B8;">Stretch Feature:</b> <em>Users can add achievements to their public profile.</em></p>
+                </div>
+            </div>
+        </div>
+        </div>
+        
+        <div class="mb-5">
+        <div class="card card-body shadow">
+            <h1 id="Localized-Data"><a href="/features/localized-data.html">Localized Data <i style="color: #74F9B8;" class="bi bi-phone"></i></a></h1>
+            <h3>Data is Localized. Private Data is processed locally. Ranking Data is not linked to User ID. Server components encrypt any user data that is stored with users public key. User data is deleted once user completes client side retrieval and storage.  Private Ranking Data is only a users Big Number and its global ranking. Public Ranking is only a users Big Number and its ranking among other public users Big Number.</h3>
+            <div style="border-color: white;" class="border-top my-4"></div>
+            <div class="row">
+                <div class="col">
+                    <p><b style="color: #74F9B8;">Problem:</b> <em>Users do not want us to sell their data in order to deliver our services and do not trust that we are not selling their data if we store their data.</em></p>
+                </div>
+                <div class="col">
+                    <p><b style="color: #74F9B8;">Solution:</b> <em>Process as much user data locally on device and store as little data on our servers as possible. When we store data, store it anonymously</em></p>
+                </div>
+                <div class="col">
+                    <p><b style="color: #74F9B8;">Stretch Feature:</b> <em>Open source backend services so that users can have assurance that we don’t look at their data beyond the items they want to make public (Big Number Ranking or possibly allowing them to make specific pieces of data like transactions or historical Big Number available).</em></p>
+                </div>
+            </div>
+        </div>
+        </div>
+        
+        <div class="mb-5">
+        <div class="card card-body shadow">
+            <h1 id="Notifications-Squared"><a href="/features/notifications-squared.html">Notifications Squared <i style="color: #74F9B8;" class="bi bi-phone-vibrate"></i></a></h1>
+            <h3>We leverage localized user data and personalized financial education to generate expressive coordinated notifications that prompt users to take financial actions at the right time and in the right place. For example, we may prompt a user to transfer $35 to their savings account every day as they leave work. Or, we may deliver users succint financial literacy information as a user arrives home on the weekend. We will utilize AI to tune these notifications to users preferences based on their effectiveness in changing user behavior over time.</h3>
+            <div style="border-color: white;" class="border-top my-4"></div>
+            <div class="row">
+                <div class="col">
+                    <p><b style="color: #74F9B8;">Problem:</b> <em>Users don't know when they are most succeptible to influence regaurding their finances</em></p>
+                </div>
+                <div class="col">
+                    <p><b style="color: #74F9B8;">Solution:</b> <em>Utilize localized user data to build a customized AI that influences user behavior</em></p>
+                </div>
+                <div class="col">
+                    <p><b style="color: #74F9B8;">Stretch Feature:</b> <em>Allow users to give their personalized AI limited control over money moevment on their behalf</em></p>
+                </div>
+            </div>
+        </div>
+        </div>
+        
+        <div class="mb-5">
+        <div class="card card-body shadow">
+            <h1 id="Peer-Competition"><a href="/features/peer-competition.html">Peer Competition <i style="color: #74F9B8;" class="bi bi-people"></i></a></h1>
+            <h3>Users can create groups and the groups will feature Group Leaderboards. Users will be ranked within the groups according to available cash. Users will be able to add and delete members of the group, create and delete groups, and decide specifically what data to share with a group.</h3>
+            <div style="border-color: white;" class="border-top my-4"></div>
+            <div class="row">
+                <div class="col">
+                    <p><b style="color: #74F9B8;">Problem:</b> <em>Users can not create private groups to share ranking data with (Big Number and that number’s rank within a subset of users that opt into a group).</em></p>
+                </div>
+                <div class="col">
+                    <p><b style="color: #74F9B8;">Solution:</b> <em>Allow users to authorize us to share their ranking data in a private group.</em></p>
+                </div>
+                <div class="col">
+                    <p><b style="color: #74F9B8;">Stretch Feature:</b> <em>Professional financial planners, accountants and other finance professionals can create groups with clients to help them deliver services.</em></p>
+                </div>
+            </div>
+        </div>
+        </div>
+        
+        <div class="mb-5">
+        <div class="card card-body shadow">
+            <h1 id="Private-Ranking"><a href="/features/private-ranking.html">Private Ranking <i style="color: #74F9B8;" class="bi bi-list-ol"></i></a></h1>
+            <h3>Private Ranking will allow users to be ranked against other users in a private fashion using Scrillionaire’s private ranking technology. These ranks will update throughout the day. Users will be ranked against all users of the app regardless of whether or not they are publicly ranked.</h3>
+            <div style="border-color: white;" class="border-top my-4"></div>
+            <div class="row">
+                <div class="col">
+                    <p><b style="color: #74F9B8;">Problem:</b> <em>Users do not know how their accumulated cash on hand compares to other peoples cash on hand at any given point in time and they do not want to share their information publicly in order to find out.</em></p>
+                </div>
+                <div class="col">
+                    <p><b style="color: #74F9B8;">Solution:</b> <em>Show users their ranking vis-a-vis other players compared cash on hand in a private fashion.</em></p>
+                </div>
+                <div class="col">
+                    <p><b style="color: #74F9B8;">Stretch Feature:</b> <em>Real Time updates.</em></p>
+                </div>
+            </div>
+        </div>
+        </div>
+        
+        <div class="mb-5">
+        <div class="card card-body shadow">
+            <h1 id="Public-Ranking"><a href="/features/public-ranking.html">Public Ranking <i style="color: #74F9B8;" class="bi bi-person-lines-fill"></i></a></h1>
+            <h3>Public Ranking allows users to opt into ranking where they are only ranked against other publicly ranked users. These rankings are made public for users to share. Users receive links to share their public profile. Their public profile is a static page where they can share their big number and/or their rank. Both are optional and can be toggled by the user. The interface for their public rank includes links to the public profiles of the people above and below them as well as the top 7.</h3>
+            <div style="border-color: white;" class="border-top my-4"></div>
+            <div class="row">
+                <div class="col">
+                    <p><b style="color: #74F9B8;">Problem:</b> <em>Users are not able to share their financial status with other people in a verifiable fashion that also protects their specific financial data.</em></p>
+                </div>
+                <div class="col">
+                    <p><b style="color: #74F9B8;">Solution:</b> <em>Allow users to authorize us to share their public ranking data (Big Number and Public Rank).</em></p>
+                </div>
+                <div class="col">
+                    <p><b style="color: #74F9B8;">Stretch Feature:</b> <em>Robust public profiles with historical ranking data and verified large purchases.</em></p>
+                </div>
+            </div>
+        </div>
+        </div>
+        
+        <div class="mb-5">
+        <div class="card card-body shadow">
+            <h1 id="Transaction-Level-Data"><a href="/features/transaction-level-data.html">Transaction Level Data <i style="color: #74F9B8;" class="bi bi-receipt"></i></a></h1>
+            <h3>Users will have access to Transaction Level Data. Users are able to see each account at an institution, then each transaction belonging to that account, then related transactions across accounts. Also, users are able to see a list of transactions sorted by date across all accounts and across all accounts for a transaction..</h3>
+            <div style="border-color: white;" class="border-top my-4"></div>
+            <div class="row">
+                <div class="col">
+                    <p><b style="color: #74F9B8;">Problem:</b> <em>Users do not have a centralized place to see all of their transaction level data and related transactions.</em></p>
+                </div>
+                <div class="col">
+                    <p><b style="color: #74F9B8;">Solution:</b> <em>Provide users with an interface to navigate and view transaction level data.</em></p>
+                </div>
+                <div class="col">
+                    <p><b style="color: #74F9B8;">Stretch Feature:</b> <em>Users see transactions stats like “largest transaction”, “Most Repeated Transaction”, “Average transaction Amount” etc.</em></p>
+                </div>
+            </div>
+        </div>
+        </div>
+         
     </div>
 </div>
     <div style="border-color: white;" class="border-top my-4"></div>
@@ -91,29 +404,10 @@
             </ul>
         </div>
         <div class="col-2">
-            <h5>Features</h5>
+            <h5>Waitlist</h5>
             <ul class="nav flex-column">
-                
-                <li class="nav-item mb-2"><a href="/features/big-number-chart.html" class="nav-link p-0 text-muted"><small>Big Number Chart</small></a></li>
-                
-                <li class="nav-item mb-2"><a href="/features/big-number.html" class="nav-link p-0 text-muted"><small>Big Number</small></a></li>
-                
-                <li class="nav-item mb-2"><a href="/features/encrypted-backups.html" class="nav-link p-0 text-muted"><small>Encrypted Backups</small></a></li>
-                
-                <li class="nav-item mb-2"><a href="/features/income-percentile-calculator.html" class="nav-link p-0 text-muted"><small>Income Percentile Calculator</small></a></li>
-                
-                <li class="nav-item mb-2"><a href="/features/levels-and-achievments.html" class="nav-link p-0 text-muted"><small>Levels & Achievments</small></a></li>
-                
-                <li class="nav-item mb-2"><a href="/features/localized-data.html" class="nav-link p-0 text-muted"><small>Localized Data</small></a></li>
-                
-                <li class="nav-item mb-2"><a href="/features/peer-competition.html" class="nav-link p-0 text-muted"><small>Peer Competition</small></a></li>
-                
-                <li class="nav-item mb-2"><a href="/features/private-ranking.html" class="nav-link p-0 text-muted"><small>Private Ranking</small></a></li>
-                
-                <li class="nav-item mb-2"><a href="/features/public-ranking.html" class="nav-link p-0 text-muted"><small>Public Ranking</small></a></li>
-                
-                <li class="nav-item mb-2"><a href="/features/transaction-level-data.html" class="nav-link p-0 text-muted"><small>Transaction Level Data</small></a></li>
-                
+                <button type="button" class="btn btn-block btn-primary btn-lg" data-toggle="modal"
+                data-target="#waitlistModal">Join the Waitlist</button>
             </ul>
         </div>
         <div class="col-2">
@@ -132,7 +426,7 @@
 
     
     <div class="d-flex justify-content-between py-4 my-4 border-top">
-        <p><small class="text-muted">© 2023 MomentumIQ, Inc. All rights reserved.</small></p>
+        <p><small class="text-muted">© 2024 MomentumIQ, Inc. All rights reserved.</small></p>
         <p><small class="text-muted">Made with 🌲🌲🌲 in Cascadia</small></p>
     </div>
 </footer>
