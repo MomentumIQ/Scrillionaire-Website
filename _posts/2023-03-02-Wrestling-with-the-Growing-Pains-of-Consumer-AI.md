@@ -34,6 +34,5 @@ Designing for Collaboration: Interfaces and workflows within AI-powered tools ne
 
 Giving Users Control: Blanket data collection cannot be the default. Consumers need granular control over what data is shared and a clear understanding of how it's being used to tailor their experiences.
 Context-Aware Recommendations: Bombarding users with hyper-targeted suggestions can be as off-putting as irrelevant recommendations. AI systems need to learn the nuances of context and avoid overly intrusive or manipulative behavior.
-Towards Responsible Consumer AI
 
 The potential of AI to enhance our lives is immense, but this journey needs guardrails. As AI researchers and developers, we have an ethical obligation to prioritize trustworthiness, combat the misuse of AI, and champion collaborative designs. It's through addressing these challenges head-on that we can foster a future where consumer AI truly empowers individuals rather than overshadows their agency.
