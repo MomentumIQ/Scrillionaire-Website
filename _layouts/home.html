@@ -1,0 +1,24 @@
+---
+layout: default
+---
+<div class="jumbotron inset">
+    <div class="row">
+        <div class="col containerinset ">
+            <h1>{{ site.tagline }}</h1>
+            <button type="button" class="btn btn-block btn-primary btn-lg" data-toggle="modal"
+                data-target="#waitlistModal">{{ site.email_signup_cta }}</button>
+            <p class="lead">{{ site.sub_tagline}}</p>
+            <p class="lead">{{ content }}</p>
+            <hr class="my-4">
+        </div>
+        <div class="col">
+            <div class="card-header text-left">
+                <img src="/assets/images/Page 1.png" width="400"  class="d-inline-block align-top" alt="Scrillionaire">
+            </div>
+        </div>
+    </div>
+</div>
+
+{% include feature-grid.html %}
+
+{% include team-grid.html %}

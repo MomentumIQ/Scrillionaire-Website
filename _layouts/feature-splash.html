@@ -1,0 +1,21 @@
+---
+layout: default
+---
+<div class="jumbotron inset">
+    <div class="container">
+        <h1 class="display-1">{{ page.title }} <i style="color: #74F9B8;" class="bi bi-{{ page.icon }}"></i></h1>
+        <h5 class="text-muted">{{ content }}</h5>
+        <div style="border-color: white;" class="border-top my-4"></div>
+        <div class="row">
+            <div class="col">
+                <p><b style="color: #74F9B8;">Problem:</b> <em>{{ page.problem }}</em></p>
+            </div>
+            <div class="col">
+                <p><b style="color: #74F9B8;">Solution:</b> <em>{{ page.solution }}</em></p>
+            </div>
+            <div class="col">
+                <p><b style="color: #74F9B8;">Stretch Feature:</b> <em>{{ page.stretch_feature }}</em></p>
+            </div>
+        </div>
+    </div>
+</div>

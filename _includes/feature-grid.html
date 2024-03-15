@@ -1,0 +1,23 @@
+<div class="border-top my-4 inset"></div>
+<div class="container inset">
+    <h1 class="display-3 font-weight-bold">Scrillionaires Features</h1>
+    <p class="lead text-muted font-weight-bold">{{ site.feature_description }}</p>
+</div>
+<div class="d-flex  py-4 my-4 inset flex-wrap justify-content-center">
+    {% for feature in site.features %}
+    <a href="{{ feature.url }}">
+        <div class="card position-relative shadow text-center mx-2 my-2" style="width: 10em; height: 10em;">  
+            <div class="card-body">
+                <h2><i class="bi bi-{{ feature.icon }}"></i></h2>
+                <h5 style="color: white;" class="card-title">{{ feature.name }}</h5>
+            </div>
+            <div class="card-img-overlay">
+                <h4><i style="color: gold;" class="bi bi-{{ feature.complete }}"></i></h4>
+            </div>
+        </div>
+    </a>
+    {% endfor %}
+</div>
+<div class="container inset">
+    <p><i style="color: gold;" class="bi bi-patch-check"></i><small class="text-muted"> = Feature Complete</small></p>
+</div>

@@ -1,0 +1,21 @@
+<div class="border-top my-4 inset"></div>
+<div class="container inset">
+    <h1 class="display-3 font-weight-bold">Scrillionaire Team</h1>
+    <p class="lead text-muted font-weight-bold">{{ site.team_description }}</p>
+</div>  
+
+<div class="d-flex  py-4 my-4 inset flex-wrap justify-content-center">
+    {% for teammember in site.team %}
+    <a href="{{ teammember.url }}">
+        <div class="card position-relative shadow text-center mx-2 my-2" style="width: 20em; height: 28em;">  
+            <div class="card-header">
+                <img class="border rounded-circle shadow card-img-top" src="{{ teammember.image }}" alt="Card image cap">
+            </div>
+            <div class="card-body text-left">
+                <h5 style="color: white;" class="card-title">{{ teammember.name }}</h5>
+                <p class="card-text text-muted">{{ teammember.position }}</p>
+            </div>
+        </div>
+    </a>
+    {% endfor %}
+</div>
